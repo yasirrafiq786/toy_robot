@@ -1,8 +1,8 @@
 class ToyRobot
   attr_accessor :facing, :position
 
-  X = (0..4).to_a
-  Y = (0..4).to_a
+  X = (0..4).to_a.freeze
+  Y = (0..4).to_a.freeze
   DIRECTIONS = %w[north east south west].freeze
 
   def initialize; end
