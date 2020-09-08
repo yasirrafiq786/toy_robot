@@ -68,7 +68,7 @@ class ToyRobot
   def report
     if on_the_table?
       puts "Your current position is #{position[0]}, #{position[1]}, #{@facing.upcase}"
-      [@position[0], @position[1], @facing]
+      return [@position[0], @position[1], @facing]
       sleep 1
     else
       puts "💀💀💀💀💀 PLEASE FIRST PLACE ROBOT ON THE TABLE 💀💀💀💀💀"
